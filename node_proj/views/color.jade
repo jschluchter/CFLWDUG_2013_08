@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1= title
+	form(method='post',action='/color/save')
+		#colorchoice
+			p your name
+			input(type='text', id='name', name='name')
+			p your color
+			input(type='text', id='choice', name='choice')
+			p
+			button(type='submit') save the awesome

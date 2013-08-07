@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	h3 lets see who likes what
+	each col in groupcolors
+		p
+			span= col.name
+			span  likes 
+			span= col.choice
